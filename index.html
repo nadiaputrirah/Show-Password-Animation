@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Show Password-22-Nadia Putri-XI RPL 4</title>
+    <!-- jquery -->
+    <script type="text/javascript" src="jquery.js"></script>
+  </head>
+
+  <body>
+    <h1>Form Login</h1>
+
+    <form action="" class="mt-3">
+      <div class="form-group">
+        <label>Username</label>
+        <br /><br />
+        <input type="text" />
+      </div>
+
+      <br /><br />
+
+      <div class="form-group">
+        <label>Password</label>
+        <br /><br />
+        <input type="password" name="" class="pass" />
+      </div>
+
+      <br />
+
+      <input type="checkbox" name="" class="cbox" /> Show Password
+
+      <br /><br />
+
+      <button>Login</button>
+    </form>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".cbox").click(function () {
+          if ($(this).is(":checked")) {
+            $(".pass").attr("type", "text");
+          } else {
+            $(".pass").attr("type", "password");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
